@@ -1,12 +1,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+/* font-family: 'Quintessential', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Sedgwick+Ave+Display&display=swap');
+
+
 .memorygame_title {
-  padding: 4rem 0 4rem 0;
+  padding: 8rem 0 3rem 0;
   /* color: #5CBE7D; */
   color: black;
   text-align: center;
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-size: 4rem;
+  font-family: 'Sedgwick Ave Display', cursive;
 }
 /* 
 .sub_header {
@@ -112,10 +122,11 @@
 }
 
 .memorycard_container {
-  margin-top: 10rem;
-  padding: 0 2rem 4rem 2rem;
+  margin: 10rem 2rem 0 2rem;
+  padding: 4rem auto 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  
 }
 
 .header_container {
@@ -156,16 +167,42 @@
   height: 0px;
   border: none;
   border-top: 4px solid black;
-  margin: 0 auto;
+  margin: 8rem auto 4rem auto;
 }
 
 
+.memory_card {
+  height: 150px;
+  width: 95%;
+}
+
+.memorygame_body { 
+  height: 100%;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+
+
+@media (min-width: 500px) {
+
+  .memorycard_container {
+    width: 100%;
+  }
+
+  .memory_card {
+    height: 170px;
+    width: 85%;
+  }
+
+}
 
 @media (min-width: 768px) {
   
 
   .memorycard_container {
     grid-template-columns: repeat(4, 1fr);
+    padding: 4rem 5rem 10rem 5rem;
   }
 
   .memorygame_body { 
@@ -194,11 +231,9 @@
 
   .memory_card {
     height: 150px;
+    width: 80%;
   }
 
-  .memorycard_container {
-    margin: 10rem 5rem 0 5rem;
-  }
 
 }
 
